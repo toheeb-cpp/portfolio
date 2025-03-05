@@ -24,10 +24,13 @@ body {
   color: var(--primWhite);
   overflow-x: hidden;
   scroll-behavior: smooth;
+  margin: 0 auto;
 }
 
 main {
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 /* End of CSS Resets */
 
@@ -439,14 +442,22 @@ header {
   }
 
   >h1 {
-    font-size: 52px;
+    font-size: 56px;
     font-weight: 800;
     max-width: fit-content;
     width: 100%;
+    /* margin-bottom: 12px; */
+
+    >.hero-text-gradient {
+      background: var(--gradientHero);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
   }
 
   >h2 {
-    font-size: 52px;
+    font-size: 56px;
     font-weight: 800;
     max-width: fit-content;
     width: 100%;
@@ -461,10 +472,10 @@ header {
   }
 
   >.hero-p2 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 300;
     margin-bottom: 40px;
-    color: var(--primWhite);
+    color: var(--paragWhiteOne);
     line-height: 1.5;
   }
 }
