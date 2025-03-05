@@ -439,14 +439,14 @@ header {
   }
 
   >h1 {
-    font-size: 76px;
+    font-size: 52px;
     font-weight: 800;
     max-width: fit-content;
     width: 100%;
   }
 
   >h2 {
-    font-size: 76px;
+    font-size: 52px;
     font-weight: 800;
     max-width: fit-content;
     width: 100%;
@@ -461,10 +461,10 @@ header {
   }
 
   >.hero-p2 {
-    font-size: 26px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 300;
     margin-bottom: 40px;
-    color: var(--secondWhite);
+    color: var(--primWhite);
     line-height: 1.5;
   }
 }
