@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="responsive.css">
   <link rel="icon" href="./assets/images/icons/favicon.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Toheeb Obayemi - Portfolio</title>
 </head>
 
@@ -19,18 +20,16 @@
       <div class="portfolio-logo">
         <img src="./assets/images/CPP.svg" alt="Portfolio logo" />
       </div>
-
       <ul class="nav-links">
         <li><a href="./index.html" class="current-page">Home</a></li>
         <li><a href="" class="inactive-page">Projects</a></li>
         <li><a href="./about.html" class="inactive-page">About me</a></li>
+        <li><a href="#contact-sect" class="inactive-page">
+          Contact
+        </a></li>
       </ul>
-      <div class="nav-right">
-        <a href="https://drive.goole.com/file/d/1LxG3s3dhMiYZRg8lnfcAbwcM1QuboqhM/view?usp=sharing" target="_blank" class="header-btn">
-          Contact me
-        </a>
-      </div>
     </nav>
+    <!-- Mobile Nav Bar -->
     <nav class="mobile-nav">
       <img src="./assets/images/CPP.svg" alt="CPP logo">
       <div class="mb-nav-right">
@@ -56,14 +55,13 @@
   <main>
     <section id="hero-sect">
       <div class="hero">
-        <!-- <p class="hero-p">Hello, I'm Toheeb!</p> -->
         <h1 class="hero-h1">Hello, I'm <span class="hero-text-gradient">Toheeb!</span></h1>
         <h2 class="hero-h2">UX Designer, Frontend Engineer.</h2>
         <p class="hero-p2">I design and build functional digital products by blending data-driven user research, visually appealing designs and modern frontend frameworks to ensure meaningful interactions that enhance seamless user experience.</p>
         <div class="buttons hero-buttons">
           <a class="primary-btn" href="#contact-sect">Get in touch with me <img src="./assets/images/icons/arrow-right.svg"
               alt="arrow-right"></a>
-          <a class="secondary-btn" href="#">Explore projects below <img src="./assets/images/icons/arrow-down.svg"
+          <a class="secondary-btn" href="#project-sect">Explore projects below <img src="./assets/images/icons/arrow-down.svg"
               alt="arrow-down"></a>
         </div>
       </div>
@@ -89,6 +87,7 @@
     <!-- End of Slider -->
 
     <!--Project Section  -->
+    <div class="p-web">
     <section id="project-sect">
       <div class="project">
         <div class="sect-heading animate">
@@ -101,56 +100,158 @@
         <div class="project-list">
           <div class="project-item-box-1 animate">
             <div class="project-item">
-              <img src="./assets/images/ancilla.png" alt="" class="project-img" />
-              <div class="tags">
-                <p>WEB DESIGN</p>
-                <p>WEB DEVELOPMENT</p>
+              <div class="image-box">
+                <img src="./assets/images/ancilla_pic2.webp" alt="" class="project-img" />
               </div>
-              <h3>Ancilla Hospital Website</h3>
-              <p class="proj-subheading">
-                Redesigned and developed the landing page with a focus on
-                enhanced user experience and modern UI aesthetics.
-              </p>
-              <a href="" class="tert-btn proj-btn">Visit Website</a>
-
+              <div class="project-details">
+                <div class="project-details-top">
+                  <h3>Ancilla Hospital Website</h3>
+                  <p class="proj-subheading">
+                    I redesigned the Ancilla hospital website in Figma, focusing on a modern UI and a seamless user experience (UX). The new design enhances visual appeal, accessibility, and navigation, ensuring that patients and healthcare providers can interact effortlessly. 🚀
+                  </p>
+                </div>
+                <div class="tags">
+                  <p>FIGMA</p>
+                  <p>WEB DESIGN</p>
+                  <p>WEB DEVELOPMENT</p>
+                </div>
+                <div class="project-item-btn">
+                  <a href="https://teeoverflow.notion.site/UX-Case-Study-1b302cd6062d80b882e4ca33fe771452?pvs=4" target="_blank" class="tert-btn proj-btn">Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a href="https://github.com/toheeb-cpp" target="_blank" class="tert-btn proj-btn">Github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a href="#" class="tert-btn proj-btn">Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="project-item-box-2 animate">
             <div class="project-item">
-              <img src="./assets/images/combo.png" alt="" class="project-img" />
-              <div class="tags">
-                <p>WEB DESIGN</p>
-                <p>WEB DEVELOPMENT</p>
+              <div class="image-box">
+                <img src="./assets/images/paytegrate_pic2.webp" alt="" class="project-img" />
               </div>
-              <h3>Combo Services Website</h3>
-              <p class="proj-subheading">
-                Designed and developed the landing page with a focus on
-                enhanced user experience and modern UI aesthetics.
-              </p>
-              <a href="" class="tert-btn proj-btn">Visit Website</a>
-
+              <div class="project-details">
+                <div class="project-details-top">
+                  <h3>Paytegrate Mobile App</h3>
+                  <p class="proj-subheading">
+                    I collaborated with my good brother Abiola, a fellow designer to design a mobile payment app that empowers business owners to manage invoices, process payments, hold and convert foreign currency balances seamlessly. This project enhances financial control, accessibility, and convenience for business owners. 🚀
+                  </p>
+                </div>
+                <div class="tags">
+                  <p>FIGMA</p>
+                  <p>WEB DESIGN</p>
+                  <p>WEB DEVELOPMENT</p>
+                </div>
+                <div class="project-item-btn">
+                  <a href="https://teeoverflow.notion.site/UX-Case-Study-1b302cd6062d80b882e4ca33fe771452?pvs=4" target="_blank" class="tert-btn proj-btn">Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a href="https://github.com/toheeb-cpp" target="_blank" class="tert-btn proj-btn">Github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a href="#" class="tert-btn proj-btn">Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="project-item-box-3 animate">
             <div class="project-item">
-              <img src="./assets/images/ancilla.png" alt="" class="project-img" />
-              <div class="tags">
-                <p>MOBILE APP</p>
-                <p>PRODUCT DESIGN</p>
+              <div class="image-box">
+                <img src="./assets/images/combo_pic2.webp" alt="" class="project-img" />
               </div>
-              <h3>Ancilla Hospital Website</h3>
-              <p class="proj-subheading">
-                Redesigned and developed the landing page with a focus on
-                enhanced user experience and modern UI aesthetics.
-              </p>
-              <a href="" class="tert-btn proj-btn">Visit Website</a>
+              <div class="project-details">
+                <div class="project-details-top">
+                  <h3>Combo Services Website</h3>
+                  <p class="proj-subheading">
+                    I designed a project management website in Figma, ensuring a modern UI and a seamless user experience (UX). The new design enhances usability, accessibility, and efficiency for teams managing projects. I then developed the website using Vanilla JavaScript and CSS, implementing a smooth and functional project. 🚀
+                  </p>
+                </div>
+                <div class="tags">
+                  <p>UX DESIGN</p>
+                  <p>WEB DESIGN</p>
+                  <p>WEB DEVELOPMENT</p>
+                </div>
+                <div class="project-item-btn">
+                  <a href="https://teeoverflow.notion.site/UX-Case-Study-1b302cd6062d80b882e4ca33fe771452?pvs=4" target="_blank" class="tert-btn proj-btn">Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a href="https://github.com/toheeb-cpp" target="_blank" class="tert-btn proj-btn">Github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a href="https://combo-project.vercel.app/" target="_blank" class="tert-btn proj-btn">Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
             </div>
-          </div>
+        </div>
         </div>
         <a class="primary-btn sect-btn" href="#contact-sect">See more projects <img
             src="./assets/images/icons/arrow-right.svg" alt="arrow-narrow-up-right"></a>
-      </div>
+      
     </section>
+  </div>
+     <!-- Mobile view -->
+     <div class="p-mobile">
+     <section id="project-mobile-sect">
+      <div class="project-mobile">
+        <div class="sect-heading animate">
+          <div class="section-tag">
+            <p>Completed Projects</p>
+            <hr class="sect-line" />
+          </div>
+          <h2>Take a look at some of my works</h2>
+        </div>
+    <div class="project-mobile-list">
+      <div class="project-item-box-1 animate">
+        <div class="project-mobile-item">
+          <img src="./assets/images/ancilla.png" alt="" class="project-img" />
+          <div class="mobile-tags">
+            <p>WEB DESIGN</p>
+            <p>WEB DEVELOPMENT</p>
+          </div>
+          <h3>Ancilla Hospital Website</h3>
+          <p class="proj-mobile-subheading">
+            I redesigned the Ancilla hospital website in Figma, focusing on a modern UI and a seamless user experience (UX). The new design enhances visual appeal, accessibility, and navigation, ensuring that patients and healthcare providers can interact effortlessly. 🚀
+          </p>
+          <div class="project-links">
+          <a href="https://teeoverflow.notion.site/UX-Case-Study-1b302cd6062d80b882e4ca33fe771452?pvs=4" target="_blank" class="tert-btn proj-btn"><img src="./assets/images/file_icon.svg" alt="" class="p-link"></a>
+          <a href="https://github.com/toheeb-cpp" target="_blank" class="tert-btn proj-btn"><img src="./assets/images/github_icon.svg" alt="" class="p-link"></a>
+          <a href="#" class="tert-btn proj-btn"><img src="./assets/images/link_icon.svg" alt="" class="p-link"></a>
+        </div>
+        </div>
+      </div>
+      <div class="project-item-box-2 animate">
+        <div class="project-mobile-item">
+          <img src="./assets/images/paytegrate_mobile.png" alt="" class="project-img" />
+          <div class="mobile-tags">
+            <p>UX DESIGN</p>
+            <p>MOBILE APP</p>
+          </div>
+          <h3>Paytegrate Mobile App</h3>
+          <p class="proj-mobile-subheading">
+            I collaborated with my good brother Abiola, a fellow designer to design a mobile payment app that empowers business owners to manage invoices, process payments, hold and convert foreign currency balances seamlessly. This project enhances financial control, accessibility, and convenience for business owners. 🚀
+          </p>
+          <div class="project-links">
+            <a href="https://teeoverflow.notion.site/UX-Case-Study-1b302cd6062d80b882e4ca33fe771452?pvs=4" target="_blank" class="tert-btn proj-btn"><img src="./assets/images/file_icon.svg" alt="" class="p-link"></a>
+            <a href="https://github.com/toheeb-cpp" target="_blank" class="tert-btn proj-btn"><img src="./assets/images/github_icon.svg" alt="" class="p-link"></a>
+            <a href="#" class="tert-btn proj-btn"><img src="./assets/images/link_icon.svg" alt="" class="p-link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-item-box-3 animate">
+        <div class="project-mobile-item">
+          <img src="./assets/images/combo_mobile.png" alt="" class="project-img" />
+          <div class="mobile-tags">
+            <p>UX DESIGN</p>
+            <p>WEB DEVELOPMENT</p>
+          </div>
+          <h3>Combo Services Website</h3>
+          <p class="proj-mobile-subheading">
+            I designed a project management website in Figma, ensuring a modern UI and a seamless user experience (UX). The new design enhances usability, accessibility, and efficiency for teams managing projects. I then developed the website using Vanilla JavaScript and CSS, implementing a smooth and functional project. 🚀
+          </p>
+          <div class="project-links">
+            <a href="https://teeoverflow.notion.site/UX-Case-Study-1b302cd6062d80b882e4ca33fe771452?pvs=4" target="_blank" class="tert-btn proj-btn"><img src="./assets/images/file_icon.svg" alt="" class="p-link"></a>
+            <a href="https://github.com/toheeb-cpp" target="_blank" class="tert-btn proj-btn"><img src="./assets/images/github_icon.svg" alt="" class="p-link"></a>
+            <a href="https://combo-project.vercel.app/" target="_blank" class="tert-btn proj-btn"><img src="./assets/images/link_icon.svg" alt="" class="p-link"></a>
+          </div>        
+        </div>
+      </div>
+    </div>
+    <a class="primary-btn sect-btn" href="#contact-sect">See more projects <img
+      src="./assets/images/icons/arrow-right.svg" alt="arrow-narrow-up-right"></a>
+</section>
+</div>
+<!-- End of Mobile view -->
+
     <!-- End of Project Section -->
 
     <!-- Work Process -->
@@ -343,8 +444,8 @@
           </div>
           <div class="tool-card card-seven animate">
             <div class="tool">
-              <img src="./assets/images/icons/logos_wordpress.svg" alt="figma" class="tool-icon" />
-              <p class="tool-tag">WordPress</p>
+              <img src="./assets/images/icons/logos_tailwind.svg" alt="figma" class="tool-icon" />
+              <p class="tool-tag">TailwindCSS</p>
             </div>
           </div>
           <div class="tool-card card-eight animate">

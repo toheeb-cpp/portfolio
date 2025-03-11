@@ -29,9 +29,8 @@ body {
 
 main {
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
 }
+
 /* End of CSS Resets */
 
 
@@ -143,10 +142,16 @@ main {
 .tert-btn {
   font-size: 18px;
   font-weight: 500;
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 3px;
   color: var(--primWhite);
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* margin-right: 12px; */
+
+  
 }
 
 .sect-btn {
@@ -155,6 +160,7 @@ main {
 
 .proj-btn {
   display: inline-block;
+  display: flex;
 }
 
 /* Section Taglines and Headings Components */
@@ -325,8 +331,6 @@ main {
 
 /* End of Components */
 
-
-
 /* Header Section */
 
 header {
@@ -338,14 +342,14 @@ header {
   z-index: 1000;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
-
 }
 
 .web-nav {
-  display: grid;
-  grid-template-columns: 0.75fr 1fr 0.75fr;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  gap: 16px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .mobile-nav {
@@ -360,9 +364,10 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  max-width: 160px;
 
   >img {
-    width: 52px;
+    width: 100%  
   }
 }
 
@@ -383,9 +388,7 @@ header {
   }
 }
 
-
-
-.nav-right {
+/* .nav-right {
   display: flex;
   justify-content: flex-end;
 
@@ -414,18 +417,20 @@ header {
       width: 20px;
     }
   }
-}
+} */
 
 /* End of Header Section */
 
 
 /* Hero Section */
 
+
 #hero-sect {
-  background-color: rgba(10, 10, 10, 90%);
-  /* background-image: url('./assets/images/six-hero-img.png'); */
+  background-color: rgba(10, 10, 10, 98%);
+  /* background-color: rgba(17, 17, 17, 90%); */
+  background-image: url('./assets/images/6WoO.gif');
   background-blend-mode: overlay;
-  background-position: right top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -433,6 +438,9 @@ header {
 .hero {
   padding: 190px 64px 68px 64px;
   color: var(--primWhite);
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   /* color: var(--headingWhite); */
 
   >.hero-p {
@@ -491,8 +499,6 @@ header {
 
 
 /* Slider section */
-
-/* Test Slider */
 
 #slider-sect {
   scroll-behavior: smooth;
@@ -596,69 +602,147 @@ header {
   }
 }
 
+.p-mobile {
+  display: none;
+}
+
+.p-web {
+  display: block;
+}
+
+#project-sect {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 .project-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 18px;
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+  gap: 64px;
   margin-bottom: 56px;
 }
 
 .project-item:hover {
   opacity: 1;
-  border: 1px solid rgb(163, 118, 240);
-  box-shadow: 0 0 12px -1px rgba(163, 118, 240, 0.4);
+  /* border: 1px solid rgb(163, 118, 240); */
+  /* box-shadow: 0 0 12px -1px rgba(163, 118, 240, 0.4); */
   transform: scale(0.99);
 }
 
 .project-item {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
   background-color: var(--bgDark);
-  border: 1px solid var(--inactive);
-  padding: 18px;
-  max-width: 420px;
+  background-color: #212531;
+  /* padding: 18px; */
+  /* max-width: 420px; */
   width: 100%;
-  border-radius: 8px;
+  border-radius: 24px;
   opacity: 0.9;
   transition: all .2s ease-in-out;
 
-  >h3 {
-    font-size: 22px;
-    font-weight: 500;
+  h3 {
+    font-size: 40px;
+    font-weight: 700;
     color: var(--primWhite);
     margin-bottom: 10px;
   }
 
-  >.proj-subheading {
+  .proj-subheading {
     color: var(--paragWhiteOne);
-    margin-bottom: 36px;
+    /* margin-bottom: 36px; */
     font-size: 18px;
   }
 }
 
+.image-box {
+position: relative;
+overflow: hidden;
+/* height: 450px; */
+margin-top: 46px;
+/* margin-top: auto; */
+margin-left: -110px;
+max-width: 750px;
+}
+ 
+.project-item-box-2 .image-box {
+  position: relative;
+  overflow: hidden;
+  order: 2;
+  /* height: 450px; */
+  margin-top: 46px;
+  /* margin-top: auto; */
+  margin-left: 0;
+  margin-right: -56px;
+  max-width: 750px;
+  }
+
 .project-img {
-  margin-bottom: 30px;
+width: 100%;
 }
 
 .tags {
   display: flex;
 
-  gap: 10px;
-  margin-bottom: 18px;
+  gap: 12px;
+  margin-bottom: 32px;
 
   >p {
-    font-size: 14px;
+    font-size: 16px;
     border: 1px solid var(--inactive);
-    border-radius: 18px;
+    border-radius: 8px;
     padding: 2px 10px;
     color: var(--inactive);
     vertical-align: middle;
   }
 }
 
+.project-details {
+display: flex;
+flex-direction: column;
+gap: 18px;
+margin-right: 48px;
+margin-top: auto;
+margin-bottom: 32px;
+max-width: 480px;
+}
+
+.project-item-box-2 .project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-left: 48px;
+  margin-top: auto;
+  margin-bottom: 32px;
+  max-width: 480px;
+  }
+
+.project-details-top {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-item-btn {
+  display: flex;
+  gap: 32px;
+}
+
 /* End of Project Section */
 
 
 /* Work Process Section */
+
+#work-process-sect {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 .work-process {
   padding: 80px 64px;
@@ -672,6 +756,8 @@ header {
 .work-card-list {
   display: grid;
   grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, 1fr);
+
   column-gap: 48px;
   row-gap: 48px;
   margin-bottom: 48px;
@@ -680,6 +766,12 @@ header {
 /* End of Work Section */
 
 /* Start of Testimonials */
+
+#testimonial-sect {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .testimonial {
   padding: 80px 60px;
@@ -767,6 +859,12 @@ header {
 
 /* Tools & Stack Section*/
 
+#tools-sect {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .tools {
   padding: 80px 64px;
 
@@ -787,6 +885,12 @@ header {
 /* End of Tools & Stack Section */
 
 /* Contact section */
+
+#contact-sect {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .contact {
   padding: 100px 64px 120px 64px;
@@ -862,6 +966,9 @@ header {
 footer {
   padding: 64px 64px 56px 64px;
   background-color: var(--bgDark);
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 
   >.footer-line {
     color: #474747;
@@ -882,9 +989,10 @@ footer {
   justify-content: flex-start;
   align-items: center;
   gap: 14px;
+  max-width: 160px;
 
   >img {
-    width: 52px;
+    width: 100%;
   }
 
   >span {
@@ -1368,7 +1476,6 @@ footer {
 }
 
 
-
 /* Hero Animation */
 
 @keyframes hero-parag {
@@ -1463,3 +1570,5 @@ footer {
 
 
 /* End of Hero Animation */
+
+/* End of all Animations */
