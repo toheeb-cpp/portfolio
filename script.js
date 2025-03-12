@@ -78,4 +78,53 @@ function navContent () {
   }
 }
 
+// Navigation Link Active Swicth Mode
 
+const projectPage = document.querySelector('.project-page');
+const homePage = document.querySelector('.home-page');
+const aboutPage = document.querySelector('.about-page');
+const contactPage = document.querySelector('.contact-page');
+
+projectPage.addEventListener('click', () => {
+  projectPage.classList.add('current-page');
+  projectPage.classList.remove('inactive-page');
+  homePage.classList.remove('current-page')
+  homePage.classList.add('inactive-page');
+  aboutPage.classList.remove('current-page')
+  aboutPage.classList.add('inactive-page');
+  contactPage.classList.remove('current-page')
+  contactPage.classList.add('inactive-page');
+})
+
+homePage.addEventListener('click', () => {
+  homePage.classList.add('current-page');
+  homePage.classList.remove('inactive-page');
+  projectPage.classList.remove('current-page')
+  projectPage.classList.add('inactive-page');
+  aboutPage.classList.remove('current-page')
+  aboutPage.classList.add('inactive-page');
+  contactPage.classList.remove('current-page')
+  contactPage.classList.add('inactive-page');
+})
+
+aboutPage.addEventListener('click', () => {
+  aboutPage.classList.add('current-page');
+  aboutPage.classList.remove('inactive-page');
+  homePage.classList.remove('current-page')
+  homePage.classList.add('inactive-page');
+  projectPage.classList.remove('current-page')
+  projectPage.classList.add('inactive-page');
+  contactPage.classList.remove('current-page')
+  contactPage.classList.add('inactive-page');
+})
+
+contactPage.addEventListener('click', () => {
+  contactPage.classList.add('current-page');
+  contactPage.classList.remove('inactive-page');
+  homePage.classList.remove('current-page')
+  homePage.classList.add('inactive-page');
+  aboutPage.classList.remove('current-page')
+  aboutPage.classList.add('inactive-page');
+  projectPage.classList.remove('current-page')
+  projectPage.classList.add('inactive-page');
+})

@@ -66,6 +66,22 @@
         transition: 0.3s ease;
     }
 
+    /* Mobile Menu Toggle */
+
+    .rotate.mb-btn-trigger .mobile-nav-btn::before {
+        margin-top: 0px;
+        transform: rotate(-45deg);
+    }
+
+    .rotate.mb-btn-trigger .mobile-nav-btn {
+        background-color: transparent;
+    }
+
+    .rotate.mb-btn-trigger .mobile-nav-btn::after {
+        margin-top: 0px;
+        transform: rotate(45deg);
+    }
+
     /* Nav links content */
 
     .f-screen-wrapper {
@@ -705,24 +721,6 @@
     }
 
     /* End of Project section Scroll Animation */
-
-
-
-    /* Mobile Menu Toggle */
-
-    .rotate.mb-btn-trigger .mobile-nav-btn::before {
-        margin-top: 0px;
-        transform: rotate(-45deg);
-    }
-
-    .rotate.mb-btn-trigger .mobile-nav-btn {
-        background-color: #0a0a0a;
-    }
-
-    .rotate.mb-btn-trigger .mobile-nav-btn::after {
-        margin-top: 0px;
-        transform: rotate(45deg);
-    }
 
     /* End of Media Query */
 }

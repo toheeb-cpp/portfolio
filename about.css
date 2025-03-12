@@ -323,9 +323,10 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  max-width: 160px;
 
   > img {
-    width: 52px;
+    width: 100%;
   }
 }
 
@@ -547,9 +548,10 @@ footer {
   justify-content: flex-start;
   align-items: center;
   gap: 14px;
+  max-width: 160px;
 
   > img {
-    width: 52px;
+    width: 100%;
   }
 
   > span {
